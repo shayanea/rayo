@@ -720,7 +720,7 @@ section {
     background-position: center;
     background-size: contain;
     height: 22px;
-    z-index: 999;
+    z-index: 9;
 }
 
 .theme-slider .swiper-slide {
