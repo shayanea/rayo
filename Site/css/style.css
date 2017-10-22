@@ -73,8 +73,8 @@ h3 {
     top: 50%;
     left: 50%;
     z-index: 9;
-    height: 120px;
-    width: 120px;
+    height: 90px;
+    width: 90px;
     transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
@@ -86,9 +86,9 @@ h3 {
 
 .rayo-loader div {
     background: rgba(24, 156, 103, 1);
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
     position: absolute;
     -webkit-animation: rayo-bounce 1.75s infinite;
     animation: rayo-bounce 1.75s infinite;
@@ -101,7 +101,7 @@ h3 {
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
     left: 50%;
-    margin-left: -10px;
+    margin-left: -7px;
 }
 
 .rayo-loader div:nth-child(3) {
@@ -112,17 +112,17 @@ h3 {
 
 @-webkit-keyframes rayo-bounce {
     10% {
-        -webkit-transform: translate3d(0, 25px, 0);
-        transform: translate3d(0, 25px, 0);
+        -webkit-transform: translate3d(0, 15px, 0);
+        transform: translate3d(0, 15px, 0);
         -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
         animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
-        height: 25px;
+        height: 15px;
     }
     14% {
-        height: 80px;
+        height: 60px;
     }
     15% {
-        height: 25px;
+        height: 15px;
         -webkit-transform: translate3d(0, -50px, 0);
         transform: translate3d(0, -50px, 0);
         -webkit-animation-timing-function: cubic-bezier(0.8, 0, 0.8, 1);
@@ -136,17 +136,17 @@ h3 {
 
 @keyframes rayo-bounce {
     10% {
-        -webkit-transform: translate3d(0, 25px, 0);
-        transform: translate3d(0, 25px, 0);
+        -webkit-transform: translate3d(0, 15px, 0);
+        transform: translate3d(0, 15px, 0);
         -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
         animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
-        height: 25px;
+        height: 15px;
     }
     14% {
-        height: 80px;
+        height: 60px;
     }
     15% {
-        height: 25px;
+        height: 15px;
         -webkit-transform: translate3d(0, -50px, 0);
         transform: translate3d(0, -50px, 0);
         -webkit-animation-timing-function: cubic-bezier(0.8, 0, 0.8, 1);
