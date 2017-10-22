@@ -9,8 +9,11 @@ function Init() {
 $(document).ready(function () {
     if ($('body').hasClass('main-page')) {
         Init();
-    }else if($('.pricing-table #Wave')){
+    }else if($('.pricing-table #Wave').length > 0){
         $('.pricing-table').css('padding-bottom', ($('.pricing-table #Wave').height() + 100));
+    }else if($('.about .about-image-one').length > 0){
+        $('.teams').css('padding-top', $('.teams #Wave').height() + 100);
+        $('.about .center-content-one').css('height',$('.about .about-image-one').height());
     }
 
     if(localStorage.getItem('cookie') == null){

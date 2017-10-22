@@ -382,10 +382,25 @@ header .menu .register {
     -moz-transition: all .3s ease;
 }
 
+header.fixed .menu .register{
+    border: 2px solid #464646;
+    background-color: #fff;
+    color: #464646;
+}
+
 header .menu .register:hover {
     background: #fff;
     color: #464646;
     border: 3px solid #fff;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+
+header.fixed .menu .register:hover {
+    background: #464646;
+    border: 2px solid #464646;
+    color: #fff;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -949,9 +964,7 @@ footer ul.socials li:nth-child(4) a {
 }
 
 @media(min-width: 1440px) {
-    .pricing-container,
-    .themes-container,
-    .about-container {
+    .pricing-container{
         width: 70%;
     }
 }
@@ -1180,4 +1193,172 @@ footer ul.socials li:nth-child(4) a {
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
+}
+
+main .about:first-child{
+    background-color: #fff;
+}
+
+main .about:last-child{
+    background-color: #f3f3f3;
+}
+
+main .about .about-container{
+    padding: 50px 0;
+}
+
+.about #Wave{
+    fill: #f3f3f3;
+    bottom: 0;
+    z-index: 9;
+}
+
+.about-container{
+    display: inline-block;
+    width: 70%;
+}
+
+@media(max-width: 1400px){
+    .about-container{
+        width: 80%;
+    }
+}
+
+.about h2 {
+    color: #4d4d4d;
+    text-align: right;
+    font-family: 'Lalezar';
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.about h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 220px;
+    right: -70px;
+    background: #62d7ab;
+}
+
+main .about:nth-child(2) h2:after{
+    right: 0;
+}
+
+.about p {
+    font-size: 13px;
+    line-height: normal;
+    color: #999;
+    text-align: right;
+}
+
+.about .about-image-one{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/about1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .about-image-one:after{
+    content: "";
+    position: absolute;
+    box-shadow: 0 15px 100px rgba(0,0,0,.3);
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 50%;
+    border-radius: 100%;
+}
+
+.about .about-image-two{
+    position: absolute;
+    width: 50%;
+    right: -20%;
+    bottom: -5%;
+    height: 300px;
+    background-image: url('../images/about2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 9;
+}
+
+@media(max-width: 1400px){
+    .about .about-image-one{
+        height: 450px;
+    }
+
+    .about .about-image-two{
+        height: 250px;
+    }
+}
+
+main .about:last-child .about-image-two{
+    right: auto;
+    left: -20%;
+}
+
+.about .about-image-two:after{
+    content: "";
+    position: absolute;
+    box-shadow: 0 15px 100px rgba(0,0,0,.3);
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 50%;
+    border-radius: 100%;
+}
+
+.teams {
+    padding: 100px 0;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+}
+
+.teams #Wave{
+    fill: #f3f3f3;
+    top: 0;
+    z-index: 9;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+
+.teams .about-container{
+    width: 100%;
+}
+
+.teams h2 {
+    font-family: "Lalezar";
+    font-size: 4em;
+    position: relative;
+    text-align: center;
+    margin-bottom: 100px;
+    color: #4d4d4d;
+}
+
+.teams .team-member{
+    padding: 0 30px;
+    margin-bottom: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.teams .team-member .profile{
+    background-color: #999;
+    height: 300px;
+    width: 100%;
+    position: relative;
 }
