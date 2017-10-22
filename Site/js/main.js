@@ -1,3 +1,8 @@
+$(window).on("load",function(){
+    $('body').removeClass('loading');
+    $('body').addClass('loaded');
+});
+
 function Init() {
     $('.center-content-one').css('height', $('.center-image-one').height());
     $('.center-content-two').css('height', $('.center-image-two').height());
