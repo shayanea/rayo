@@ -6,7 +6,7 @@ $(window).on("load",function(){
 function Init() {
     $('.center-content-one').css('height', $('.center-image-one').height());
     $('.center-content-two').css('height', $('.center-image-two').height());
-    $('.center-content-third').css('height', $('.center-data-third').height());
+    $('.center-content-third').css('height', $('.center-data-third').height() + 150);
     $('.features #Wave').css('bottom', '-' + $('.features #Wave').height());
     $('footer').css('padding-top', $('.features #Wave').height() + 100);
 }
@@ -33,7 +33,7 @@ $(document).ready(function () {
         paginationClickable: true
     });
 
-    $('.swiper-container').css('height',$('.center-data-third').height())
+    $('.theme-slider').css('height',$('.center-data-third').height() + 150)
 
     new WOW().init();
 });
